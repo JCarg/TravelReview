@@ -1,0 +1,105 @@
+﻿@model IEnumerable<TravelReviewProject.Models.ReviewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>Index</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h3>@Html.DisplayFor(modelItem => item.Title)</h3>
+                    <h5></h5>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h4>@Html.DisplayFor(modelItem => item.Location)</h4>
+                            <h6>
+                                @Html.DisplayFor(modelItem => item.VacationStart)
+                                @Html.DisplayFor(modelItem => item.VacationEnd)
+                            </h6>
+                        </div>
+                    </div>
+                    <p>@Html.DisplayFor(modelItem => item.Comment)</p>
+                    <p>
+                        Published: @Html.DisplayFor(modelItem => item.PublishDate)
+                        @Html.DisplayFor(modelItem => item.Category.Name)
+                    </p>
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn btn-primary", role = "button" })
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@*<table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Category.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Summary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PublishDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VacationStart)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VacationEnd)
+            </th>
+            <th></th>
+        </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Summary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PublishDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VacationStart)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VacationEnd)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            </td>
+        </tr>
+    }
+
+    </table>*@
