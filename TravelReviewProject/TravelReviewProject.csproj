@@ -161,6 +161,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702101857365_InitialCreate.cs" />
+    <Compile Include="Migrations\201702101857365_InitialCreate.Designer.cs">
+      <DependentUpon>201702101857365_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702112004497_ImageString.cs" />
+    <Compile Include="Migrations\201702112004497_ImageString.Designer.cs">
+      <DependentUpon>201702112004497_ImageString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CategoryModel.cs" />
     <Compile Include="Models\ReviewModel.cs" />
     <Compile Include="Models\TravelReviewProjectContext.cs" />
@@ -238,6 +247,14 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201702101857365_InitialCreate.resx">
+      <DependentUpon>201702101857365_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702112004497_ImageString.resx">
+      <DependentUpon>201702112004497_ImageString.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

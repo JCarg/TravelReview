@@ -24,6 +24,8 @@ namespace TravelReviewProject.Models
         public DateTime VacationStart { get; set; }
         [Display(Name = "Vacation End Date")]
         public DateTime VacationEnd { get; set; }
+        public string Image { get; set; }
+
         [ForeignKey("Category")]
         public int CategoryID { get; set; }
         public virtual CategoryModel Category { get; set; }

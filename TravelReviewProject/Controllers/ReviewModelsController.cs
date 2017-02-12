@@ -48,7 +48,7 @@ namespace TravelReviewProject.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Summary,Title,Comment,Location,PublishDate,VacationStart,VacationEnd,CategoryID")] ReviewModel reviewModel)
+        public ActionResult Create([Bind(Include = "ID,Summary,Title,Comment,Location,Image,PublishDate,VacationStart,VacationEnd,CategoryID")] ReviewModel reviewModel)
         {
             if (ModelState.IsValid)
             {
@@ -82,7 +82,7 @@ namespace TravelReviewProject.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Summary,Title,Comment,Location,PublishDate,VacationStart,VacationEnd,CategoryID")] ReviewModel reviewModel)
+        public ActionResult Edit([Bind(Include = "ID,Summary,Title,Comment,Location,Image,PublishDate,VacationStart,VacationEnd,CategoryID")] ReviewModel reviewModel)
         {
             if (ModelState.IsValid)
             {

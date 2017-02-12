@@ -23,7 +23,21 @@ select,
 textarea {
     max-width: 280px;
 }
-.nav .navbar .navbar-toggleable-md{
-    background-color:pink;
+.navbar{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HomeIndex {
+    text-align: center;
+    color: floralwhite;
+    position:relative;
+    object-fit:fill;
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:larger;
+}
+.HomeContext{
+    margin-top:250px;
+    height: 100px;
+    min-height:200px;   
 }
 
