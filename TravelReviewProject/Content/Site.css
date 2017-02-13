@@ -1,7 +1,8 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color:yellow;
+    background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Simple_world_map.svg/2000px-Simple_world_map.svg.png);
+
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -23,9 +24,16 @@ select,
 textarea {
     max-width: 280px;
 }
+/*Navbar Start*/
 .navbar{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+ .navbar .btn{
+     background-color:#222;
+     border:none;
+ }
+ /*Navbar End*/
+ /*Home Index Start*/
 .HomeIndex {
     text-align: center;
     color: floralwhite;
@@ -40,4 +48,41 @@ textarea {
     height: 100px;
     min-height:200px;   
 }
+/*Home Index End*/
+/*Review Index Start*/
+.col-md-8{
+text-align:center;
+}
+.thumbnail{
+    text-align:left;
+    background-color: rgba(142, 207, 64, 0.86);
+    text-align:center;
+    display:flex;
+}
+.ReviewIndexTitle{
+    text-align:center;
+    background-color:rgba(252,248,227,.58);
+    font-weight:800;
+    text-decoration:underline;
+    width:auto;
+}
+.thumbnail h3{
+    font-weight:800;
+    font-variant-caps:all-small-caps;
+    font-size:30px;
+    text-decoration:overline;
+}
+.thumbnail h4{
+    text-decoration:underline;
+    font-weight:800;
+}
+.thumbnail p{
+    text-decoration:underline;
+    font-weight:800;
+}
+.thumbnail .btn-primary{
+    background-color:black;
+    border-color:floralwhite;
+}
+
 
