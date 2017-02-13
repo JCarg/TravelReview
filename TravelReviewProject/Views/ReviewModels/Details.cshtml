@@ -6,22 +6,21 @@
 
 <body background="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Simple_world_map.svg/2000px-Simple_world_map.svg.png">
     <h2 class="DetailsTitle row">@Html.DisplayFor(model => model.Title)</h2>
-        <div class="thumbnail row">
-            <img class="col-md-4"src="@Html.DisplayFor(model=>model.Image)" style="width:400px; height:400px;" />
-            <div class="col-md-8">
-                <div class="details">
-                    <h4>@Html.DisplayFor(model => model.Location)</h4>
-                    <h5 class="vacationdates">@Html.DisplayFor(model => model.VacationStart) - @Html.DisplayFor(model => model.VacationEnd)</h5>
-                    <p class="comment">@Html.DisplayFor(model => model.Comment)</p>
-                    <p>@Html.DisplayFor(model => model.Category.Name)</p>
-                    <p>Published: @Html.DisplayFor(model => model.PublishDate)</p>
-                </div>
-                    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { @class = "btn btn-primary", role = "button" })
-                    @Html.ActionLink("Back", "Index", new { id = Model.ID }, new { @class = "btn btn-primary", role = "button" })
-                
+    <div class="thumbnail row">
+        <img class="col-md-4" src="@Html.DisplayFor(model=>model.Image)" style="width:400px; height:400px;" />
+        <div class="col-md-8">
+            <div class="details">
+                <h4>@Html.DisplayFor(model => model.Location)</h4>
+                <h5 class="vacationdates">@Html.DisplayFor(model => model.VacationStart) - @Html.DisplayFor(model => model.VacationEnd)</h5>
+                <p class="comment">@Html.DisplayFor(model => model.Comment)</p>
+                <p>@Html.DisplayFor(model => model.Category.Name)</p>
+                <p>Published: @Html.DisplayFor(model => model.PublishDate)</p>
             </div>
-        </div>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { @class = "btn btn-primary", role = "button" })
+            @Html.ActionLink("Back", "Index", new { id = Model.ID }, new { @class = "btn btn-primary", role = "button" })
 
+        </div>
+    </div>
     <p>
     </p>
 </body>
