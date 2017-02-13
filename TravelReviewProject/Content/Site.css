@@ -1,7 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Simple_world_map.svg/2000px-Simple_world_map.svg.png);
+    
 
 }
 
@@ -44,9 +44,13 @@ textarea {
     font-size:larger;
 }
 .HomeContext{
-    margin-top:225px;
+    margin-top:253px;
     height: 100px;
     min-height:200px;   
+}
+.btn-info{
+ background-color:black;
+ border-color:floralwhite;
 }
 /*Home Index End*/
 /*Review Index Start*/
@@ -83,6 +87,29 @@ text-align:center;
 .thumbnail .btn-primary{
     background-color:black;
     border-color:floralwhite;
+}
+
+.DetailsTitle{
+    text-align:center;
+    background-color:rgba(252,248,227,.58);
+    font-weight:800;
+    text-decoration:underline;
+    width:auto;
+}
+/*Details Page Start*/
+.details p{
+    text-decoration:none;
+    font-weight:600;
+}
+.details .vacationdates{
+   font-weight:bold;
+}
+.details .comment{
+    color:floralwhite;
+    margin-top:24px;
+    margin-bottom:24px;
+    font-size:larger
+    
 }
 
 
